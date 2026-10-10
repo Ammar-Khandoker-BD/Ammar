@@ -11,10 +11,16 @@ Responsive single-page business website for Growthworks International.
 - Careers / talent-pool email draft
 - WhatsApp project enquiry form
 
-## Publish
-This repository includes a GitHub Actions workflow at `.github/workflows/pages.yml`. It configures GitHub Pages and deploys the website whenever changes are pushed to `main`.
+## Publish with GitHub Pages
+Repository: https://github.com/Ammar-Khandoker-BD/Ammar
 
-Expected URL: https://ammar-khandoker-bd.github.io/Ammar/
+1. Open **Settings → Pages**: https://github.com/Ammar-Khandoker-BD/Ammar/settings/pages
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**, then Save.
+3. Open **Actions** and re-run the latest **Deploy Growthworks website to GitHub Pages** workflow, or push a new commit to main.
+
+Expected URL after a successful deployment: https://ammar-khandoker-bd.github.io/Ammar/
+
+The first automatic attempt could not enable Pages because the connected GitHub Actions integration does not have permission to create the Pages site. A repository owner must enable the Pages source once in Settings; after that, the deployment workflow can publish the site.
 
 ## Before promoting publicly
 - Add the official business address and social profile URLs when available.
