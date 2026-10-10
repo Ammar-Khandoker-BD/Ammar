@@ -506,6 +506,130 @@ html.motion-ready .service-card.is-visible{animation:serviceCardIn .55s cubic-be
  html.motion-ready .service-card.is-visible{animation:none!important}
 }
 
+
+/* Chromatic redesign: midnight indigo, periwinkle glass and mint accents */
+:root{
+ --navy:#081541;
+ --navy2:#10245e;
+ --blue:#657dff;
+ --sky:#9aabff;
+ --mint:#a8f3d7;
+ --ink:#152044;
+ --muted:#58688d;
+ --line:#d3dcf6;
+ --paper:#eaf0ff;
+ --shadow:0 25px 65px rgba(20,34,91,.14);
+}
+body{background:#e8edfb}
+header{background:rgba(230,237,252,.86);border-bottom-color:rgba(173,190,235,.62)}
+.announcement{background:linear-gradient(90deg,#071335,#142c6b 55%,#132051)}
+.intro{background:linear-gradient(110deg,#dce6ff,#e9e5ff 54%,#daf6ef);border-bottom-color:#d1dcf6}
+.intro p{color:#16234e}
+.stat strong{color:#243c9a}
+.stat span{color:#5f6f98}
+/* Replace the white services canvas with a rich, branded deep-blue stage */
+.services{
+ color:#f5f7ff;
+ background:
+  radial-gradient(ellipse at 8% 8%,rgba(103,130,255,.19),transparent 30%),
+  radial-gradient(ellipse at 100% 55%,rgba(88,112,220,.17),transparent 34%),
+  linear-gradient(138deg,#08163d 0%,#101f53 52%,#172b68 100%);
+}
+.services:before{background:radial-gradient(circle,rgba(131,153,255,.19),transparent 70%)}
+.services:after{background:radial-gradient(circle,rgba(93,234,195,.11),transparent 70%)}
+.services .heading h2{color:#f7f8ff}
+.services .heading>p{color:#bdc9ed}
+.services .heading h2 .shine{background-image:linear-gradient(100deg,#a8b8ff,#a5f2dc);-webkit-background-clip:text;background-clip:text}
+.service-eyebrow{color:#b7c5ff!important}
+.service-eyebrow-note{background:rgba(255,255,255,.07);border-color:rgba(190,205,255,.18);color:#b9c7f1}
+.service-brand-mark{background:rgba(255,255,255,.09);border-color:rgba(205,218,255,.19);box-shadow:0 8px 20px rgba(0,0,0,.17),inset 0 1px 0 rgba(255,255,255,.12)}
+/* Tinted translucent service cards, no plain white card grid */
+.service-tools .filters{background:rgba(255,255,255,.055);border-color:rgba(199,212,255,.15);box-shadow:0 12px 30px rgba(0,0,0,.09);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.service-tools .filter{color:#c8d3f5;border-color:transparent}
+.service-tools .filter:hover{background:rgba(143,164,255,.13);border-color:rgba(174,191,255,.2);color:#fff}
+.service-tools .filter.active{background:linear-gradient(135deg,#8195ff,#5d72ef);border-color:rgba(255,255,255,.22);color:#fff;box-shadow:0 8px 21px rgba(58,80,209,.35)}
+.service-tools .search{background:rgba(255,255,255,.075);border-color:rgba(190,206,255,.2);box-shadow:0 10px 26px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(17px);backdrop-filter:blur(17px)}
+.service-tools .search span{color:#a9baff}
+.service-tools .search input{color:#f7f8ff}
+.service-tools .search input::placeholder{color:#aebce4}
+.service-tools .search:focus-within{border-color:#9db0ff;box-shadow:0 0 0 4px rgba(134,156,255,.12),0 12px 28px rgba(0,0,0,.14)}
+.service-card{
+ background:linear-gradient(145deg,rgba(35,53,111,.90),rgba(20,37,87,.94));
+ border-color:rgba(178,196,255,.20);
+ box-shadow:0 12px 30px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.05);
+}
+.service-card:before{background:radial-gradient(circle at 100% 0,color-mix(in srgb,var(--card-accent) 28%,transparent),transparent 48%);opacity:.58}
+.service-card:after{background:linear-gradient(90deg,var(--card-accent),#a6b7ff,#9bf1d2)}
+.service-card:hover{
+ background:linear-gradient(145deg,rgba(43,63,132,.96),rgba(24,44,103,.98));
+ border-color:color-mix(in srgb,var(--card-accent) 55%,rgba(255,255,255,.18));
+ box-shadow:0 25px 48px rgba(0,0,0,.24),0 0 0 1px rgba(255,255,255,.025) inset;
+}
+.service-no{color:#aebde8}
+.service-no i{color:#7483b5}
+.service-card h3{color:#fbfcff}
+.service-card p{color:#c2cdec}
+.service-card-kicker{color:color-mix(in srgb,var(--card-accent) 56%,#dfe5ff)}
+.kicker-dot{box-shadow:0 0 0 3px color-mix(in srgb,var(--card-accent) 26%,#263d7f)}
+.service-icon{
+ background:color-mix(in srgb,var(--card-accent) 20%,#1d2d69);
+ border-color:color-mix(in srgb,var(--card-accent) 33%,rgba(255,255,255,.10));
+ color:color-mix(in srgb,var(--card-accent) 60%,#ffffff);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
+}
+.service-icon-aura{border-color:color-mix(in srgb,var(--card-accent) 76%,white)}
+.card-foot{border-top-color:rgba(201,214,255,.14)}
+.deliverable-count{color:#91a2d0}
+.deliverable-count b{color:#d0dbfc}
+.card-foot button{color:#b9c7ff}
+.card-foot button:hover{background:rgba(157,177,255,.12);border-color:rgba(157,177,255,.24)}
+.no-results{color:#d0daf7}
+.service-bottom{
+ color:#f7f9ff;
+ border-color:rgba(187,204,255,.2);
+ background:linear-gradient(110deg,rgba(43,61,125,.85),rgba(26,47,107,.9));
+ box-shadow:0 16px 35px rgba(0,0,0,.13),inset 0 1px 0 rgba(255,255,255,.06);
+}
+.service-bottom strong{color:#fff}
+.service-bottom small{color:#c2cdef}
+.service-bottom:before{background:linear-gradient(145deg,#aaf3d9,#7de1c3);color:#0b2458;box-shadow:0 8px 21px rgba(0,0,0,.16)}
+.service-bottom .btn-dark{background:linear-gradient(135deg,#aaf3d9,#8ce8cc);color:#08204e;box-shadow:0 8px 22px rgba(83,213,175,.17)}
+/* Soft tinted canvases replace stark white between the main sections */
+.process{background:linear-gradient(135deg,#e1e9ff 0%,#e9e5ff 52%,#dff5f0 100%)}
+.step{background:linear-gradient(145deg,rgba(246,248,255,.88),rgba(224,232,255,.92));border-color:#d1dcf7;box-shadow:0 10px 24px rgba(45,62,132,.055),inset 0 1px 0 rgba(255,255,255,.7)}
+.step:hover{background:linear-gradient(145deg,#f1f4ff,#e0e8ff);box-shadow:0 17px 35px rgba(45,62,132,.12)}
+.step-icon{background:linear-gradient(145deg,#e1e8ff,#d6dcff);border-color:#cdd7fb;color:#405de6}
+.note{color:#63729a}
+#about{background:linear-gradient(125deg,#edf2ff 0%,#e4eaff 55%,#e2f5f0 100%)}
+.about-visual{background:radial-gradient(circle at 20% 15%,rgba(255,255,255,.44),transparent 40%),linear-gradient(145deg,#d7e2ff,#cdd5f5 55%,#c9eee4);border-color:#cbd6f4}
+.about-visual:after{border-color:rgba(92,113,194,.32);box-shadow:0 0 0 33px rgba(255,255,255,.15),0 0 0 68px rgba(255,255,255,.10)}
+.value{background:linear-gradient(140deg,rgba(245,247,255,.92),rgba(220,229,255,.95));border-color:#d0daf4;box-shadow:0 7px 20px rgba(35,55,118,.04),inset 0 1px 0 rgba(255,255,255,.65)}
+.value:hover{background:linear-gradient(140deg,#eff3ff,#dce5ff)}
+.humanity{background:radial-gradient(ellipse at 0 0,rgba(154,240,214,.35),transparent 42%),linear-gradient(120deg,#d9f5eb,#d8ecf8 60%,#e4e5ff)}
+.donation-card{background:linear-gradient(145deg,#effbf7,#d9f4eb);border-color:#bfe8da;box-shadow:0 20px 45px rgba(18,93,67,.09)}
+.transparency{background:rgba(212,244,232,.85);border-color:#c4e9db}
+.careers{background:linear-gradient(130deg,#e8edff,#dddffd 55%,#e4eafb)}
+.opening{background:linear-gradient(145deg,#f0f2ff,#dfe6ff);border-color:#ced8f6;box-shadow:0 12px 28px rgba(25,43,107,.07)}
+.role-tags span{background:rgba(231,236,255,.82);border-color:#c9d4f2;color:#3d507e}
+.role-tags span:hover{background:#d8e2ff;border-color:#9eaff0}
+.form-card{background:linear-gradient(145deg,rgba(242,245,255,.98),rgba(221,231,255,.98));border-color:#cbd7f5;box-shadow:0 22px 52px rgba(21,39,102,.10),inset 0 1px 0 rgba(255,255,255,.65)}
+.form-card input,.form-card select,.form-card textarea{background:rgba(247,249,255,.92);border-color:#cbd6f1;color:#1a2850}
+.form-card input::placeholder,.form-card textarea::placeholder{color:#7785aa}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{background:#f7f9ff}
+.contact .form-card{background:linear-gradient(145deg,#e3eaff,#d1dcff);border-color:rgba(255,255,255,.28)}
+.contact .form-card input,.contact .form-card select,.contact .form-card textarea{background:rgba(248,250,255,.92)}
+.final-cta{background:linear-gradient(110deg,#a7efd8,#c1e4ff 56%,#cbcfff)}
+footer{background:linear-gradient(120deg,#050d29,#111e4c 62%,#142b61)}
+.wa-float{background:linear-gradient(135deg,#1da977,#087c61);border-color:rgba(195,255,232,.55)}
+@media(max-width:760px){
+ .services{background:radial-gradient(ellipse at 90% 0%,rgba(103,130,255,.16),transparent 32%),linear-gradient(160deg,#08163d,#13265e 70%,#172b68)}
+ .service-card{background:linear-gradient(145deg,rgba(35,53,111,.94),rgba(20,37,87,.97))}
+ .service-bottom:before{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .services,.service-card,.step,.value,.work-card{scroll-behavior:auto}
+}
+
 </style>
 </head>
 <body>
