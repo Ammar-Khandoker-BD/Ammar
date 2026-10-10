@@ -400,6 +400,112 @@ html.motion-ready .reveal.is-visible{animation:revealUp .72s cubic-bezier(.2,.75
   html.motion-ready .reveal:not(.is-visible){opacity:1;translate:none;filter:none}
 }
 
+
+/* Signature service-library treatment */
+.services{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#fbfcff 56%,#f7f9ff 100%)}
+.services:before,.services:after{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:50%;filter:blur(1px)}
+.services:before{width:410px;height:410px;right:-205px;top:155px;background:radial-gradient(circle,rgba(114,145,255,.10),transparent 70%)}
+.services:after{width:360px;height:360px;left:-210px;bottom:40px;background:radial-gradient(circle,rgba(160,240,216,.12),transparent 70%)}
+.services .heading{align-items:flex-end;gap:42px}
+.services .heading>div:first-child{min-width:0}
+.service-eyebrow{display:flex;align-items:center;gap:10px!important;margin-bottom:14px;color:#5267ae!important;letter-spacing:.16em!important}
+.services .heading .service-eyebrow:before{display:none}
+.service-brand-mark{display:inline-grid;place-items:center;width:34px;height:34px;padding:3px;border-radius:11px;background:rgba(255,255,255,.78);border:1px solid #dfe6fa;box-shadow:0 7px 18px rgba(14,37,104,.10),inset 0 1px 0 #fff;transform:rotate(-4deg);transition:transform .35s cubic-bezier(.2,.75,.2,1),box-shadow .35s}
+.service-brand-mark svg{display:block;width:100%;height:100%;border-radius:8px}
+.services .heading:hover .service-brand-mark{transform:rotate(0) scale(1.06);box-shadow:0 11px 24px rgba(14,37,104,.15)}
+.service-eyebrow-note{margin-left:2px;padding:6px 9px;border-radius:7px;border:1px solid #e4e9f7;background:rgba(245,247,255,.85);font-size:8px;letter-spacing:.11em;color:#7b87a7;white-space:nowrap}
+.services .heading h2{max-width:680px}
+.services .heading>p{max-width:370px}
+.service-tools{align-items:center;gap:18px;margin-bottom:25px}
+.filters{padding:4px;border:1px solid rgba(224,231,246,.88);border-radius:17px;background:rgba(248,250,255,.82);box-shadow:0 8px 28px rgba(24,44,101,.035);gap:5px}
+.filter{padding:10px 14px;border-radius:12px;border:1px solid transparent;background:transparent;white-space:nowrap;font-size:10px}
+.filter.active{background:linear-gradient(135deg,#10265f,#1a367b);border-color:rgba(255,255,255,.1);box-shadow:0 7px 16px rgba(13,35,98,.18)}
+.search{border-radius:15px;min-width:230px;border-color:#e0e7f7;background:rgba(255,255,255,.83);box-shadow:0 7px 22px rgba(12,30,82,.035)}
+.search:focus-within{transform:translateY(-1px)}
+.services-grid{align-items:stretch;gap:18px}
+.service-card{
+ --card-accent:#4968e9;
+ position:relative;isolation:isolate;overflow:hidden;min-width:0;min-height:270px;
+ border:1px solid #e1e8f6;border-radius:22px;padding:23px 23px 20px;
+ background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(252,253,255,.94));
+ box-shadow:0 6px 22px rgba(18,39,100,.035),inset 0 1px 0 rgba(255,255,255,.92);
+ transition:transform .34s cubic-bezier(.2,.75,.2,1),border-color .3s,box-shadow .34s,background .3s;
+}
+.service-card.cat-branding{--card-accent:#4a61e8}
+.service-card.cat-organic{--card-accent:#138b83}
+.service-card.cat-ads{--card-accent:#bf7836}
+.service-card.cat-tracking{--card-accent:#3976d7}
+.service-card.cat-automation{--card-accent:#8258c7}
+.service-card:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(circle at 100% 0,color-mix(in srgb,var(--card-accent) 11%,transparent),transparent 43%);opacity:.35;transition:opacity .35s}
+.service-card:after{content:"";position:absolute;z-index:2;top:0;left:18px;right:18px;height:3px;border-radius:0 0 6px 6px;background:linear-gradient(90deg,var(--card-accent),#9aafff,#aaf3d9);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.75,.2,1)}
+.service-card:hover{transform:translateY(-7px);border-color:color-mix(in srgb,var(--card-accent) 33%,#e1e8f6);box-shadow:0 22px 48px rgba(19,40,101,.105),0 3px 10px rgba(19,40,101,.04)}
+.service-card:hover:before{opacity:1}
+.service-card:hover:after{transform:scaleX(1)}
+.card-top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:19px}
+.service-no{font-size:10px;letter-spacing:.13em;font-weight:800;color:#7380a3;font-variant-numeric:tabular-nums}
+.service-no i{font-style:normal;color:#b1bad0;margin:0 3px}
+.service-icon{position:relative;isolation:isolate;flex:0 0 45px;width:45px;height:45px;display:grid;place-items:center;overflow:visible;border-radius:15px;background:color-mix(in srgb,var(--card-accent) 9%,white);border:1px solid color-mix(in srgb,var(--card-accent) 13%,white);color:var(--card-accent);box-shadow:inset 0 1px 0 #fff;transition:transform .35s cubic-bezier(.2,.75,.2,1),box-shadow .35s}
+.service-icon-aura{position:absolute;inset:-5px;border-radius:18px;border:1px solid color-mix(in srgb,var(--card-accent) 45%,transparent);opacity:0;transform:scale(.76);transition:opacity .28s,transform .38s cubic-bezier(.2,.75,.2,1);pointer-events:none}
+.service-icon-glyph{position:relative;z-index:1;display:grid;place-items:center;font-size:20px;line-height:1;font-weight:700}
+.service-card:hover .service-icon{transform:translateY(-2px) rotate(-5deg) scale(1.06);box-shadow:0 8px 18px color-mix(in srgb,var(--card-accent) 18%,transparent),inset 0 1px 0 #fff}
+.service-card:hover .service-icon-aura{opacity:.75;transform:scale(1)}
+.service-card-kicker{display:flex;align-items:center;gap:7px;margin:0 0 8px;font-size:8px;line-height:1.5;letter-spacing:.105em;font-weight:800;color:color-mix(in srgb,var(--card-accent) 76%,#4d5a7a)}
+.kicker-dot{width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:var(--card-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--card-accent) 12%,white)}
+.service-card h3{font-size:16px;line-height:1.38;letter-spacing:-.035em;margin:0 0 9px;color:#121c39}
+.service-card p{font-size:11.5px;line-height:1.85;color:#66728d;margin:0 0 23px}
+.card-foot{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:15px;border-top:1px solid #edf0f8}
+.deliverable-count{font-size:9px;font-weight:700;color:#8a95ad;white-space:nowrap}
+.deliverable-count b{font-weight:800;color:#5b688a}
+.card-foot button{display:inline-flex;align-items:center;gap:7px;flex:0 0 auto;padding:7px 10px;border:1px solid transparent;border-radius:10px;background:transparent;color:var(--card-accent);font-size:10px;font-weight:800;transition:background .22s,border-color .22s,transform .22s}
+.card-foot button i{font-size:14px;font-style:normal;transition:transform .22s}
+.card-foot button:hover{background:color-mix(in srgb,var(--card-accent) 8%,white);border-color:color-mix(in srgb,var(--card-accent) 13%,white)}
+.card-foot button:hover i{transform:translate(2px,-2px)}
+.service-bottom{border-radius:19px;border:1px solid #dfe7fb;background:linear-gradient(112deg,rgba(244,247,255,.96),rgba(235,242,255,.84));box-shadow:0 12px 32px rgba(16,39,103,.045)}
+.service-bottom:before{content:"GW";flex:0 0 43px;display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:#0b205d;color:#fff;font-size:12px;letter-spacing:.08em;font-weight:800;box-shadow:0 8px 19px rgba(11,32,93,.18)}
+.service-bottom>div{flex:1}
+.service-bottom .btn{border-radius:12px}
+@keyframes serviceIconFloat{0%,100%{translate:0 0}50%{translate:0 -3px}}
+.service-card:hover .service-icon-glyph{animation:serviceIconFloat 1.1s ease-in-out infinite}
+@keyframes serviceCardIn{from{opacity:0;transform:translateY(15px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+html.motion-ready .service-card.is-visible{animation:serviceCardIn .55s cubic-bezier(.2,.75,.2,1) both;animation-delay:var(--reveal-delay,0ms)}
+@media(max-width:1000px){
+ .services .heading{gap:22px}
+ .filters{max-width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:thin}
+ .filter{flex:0 0 auto}
+ .service-tools{align-items:stretch;flex-direction:column}
+ .search{width:100%;min-width:0}
+ .services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .services .heading{gap:12px}
+ .service-eyebrow{flex-wrap:wrap;gap:8px!important}
+ .service-brand-mark{width:30px;height:30px;border-radius:9px}
+ .service-eyebrow-note{font-size:7px;padding:5px 7px}
+ .service-tools{gap:12px}
+ .filters{margin-inline:-2px;padding:4px;gap:4px;border-radius:14px}
+ .filter{font-size:9px;padding:9px 11px}
+ .services-grid{grid-template-columns:minmax(0,1fr);gap:13px}
+ .service-card{min-height:0;padding:19px 19px 16px;border-radius:19px}
+ .card-top{margin-bottom:16px}
+ .service-icon{width:43px;height:43px;flex-basis:43px;border-radius:14px}
+ .service-card-kicker{font-size:8px}
+ .service-card h3{font-size:16px}
+ .service-card p{font-size:12px;line-height:1.75;margin-bottom:17px}
+ .card-foot{padding-top:12px}
+ .service-bottom{align-items:stretch;gap:13px}
+ .service-bottom:before{display:none}
+}
+@media(hover:none){
+ .service-card:hover,.work-card:hover,.step:hover,.value:hover{transform:none}
+ .service-card:hover .service-icon-glyph{animation:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .service-card,.service-icon,.service-icon-aura,.card-foot button,.card-foot button i{transition:none!important}
+ .service-card:hover,.service-card:hover .service-icon{transform:none}
+ .service-card:hover .service-icon-glyph{animation:none!important}
+ html.motion-ready .service-card.is-visible{animation:none!important}
+}
+
 </style>
 </head>
 <body>
@@ -423,7 +529,7 @@ html.motion-ready .reveal.is-visible{animation:revealUp .72s cubic-bezier(.2,.75
 <div class="float one"><span class="float-mark">↗</span><small>YOUR NEXT MOVE</small><strong>Build with purpose</strong></div><div class="float two"><span class="float-mark">◎</span><small>VISIBILITY</small><strong>Be easier to find</strong></div><div class="float three"><span class="float-mark">✦</span><small>SMARTER SYSTEMS</small><strong>Grow sustainably</strong></div></div></div>
 <div class="container hero-bottom"><span>STRATEGY</span><i></i><span>CREATIVITY</span><i></i><span>PERFORMANCE</span><i></i><span>HUMANITY</span></div></section>
 <div class="intro"><div class="container intro-inner"><p><span>✳</span> One partner for your digital growth journey.</p><div class="stats"><div class="stat"><strong>15</strong><span>Client-focused services</span></div><div class="stat"><strong>05</strong><span>Service categories</span></div><div class="stat"><strong>10%</strong><span>Humanity First commitment*</span></div></div></div></div>
-<section class="pad services" id="services"><div class="container"><div class="heading"><div><div class="eyebrow">WHAT WE DO</div><h2>Digital solutions for <span class="shine">real business goals.</span></h2></div><p>From your first business page to advanced tracking and automation, choose the support your business needs right now.</p></div>
+<section class="pad services" id="services"><div class="container"><div class="heading"><div><div class="eyebrow service-eyebrow"><span class="service-brand-mark" aria-hidden="true"><svg viewBox="0 0 100 100"><rect x="2" y="2" width="96" height="96" rx="25" fill="#0b205d"/><path d="M75 24 A35 35 0 1 0 82 48" fill="none" stroke="#fff" stroke-width="7.1" stroke-linecap="round"/><path d="M29 35 L45 56 M44 35 L60 56 M60 56 L71 44 L83 44" fill="none" stroke="#fff" stroke-width="7.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>WHAT WE DO</span><span class="service-eyebrow-note">15 SOLUTIONS · ONE PARTNER</span></div><h2>Digital solutions for <span class="shine">real business goals.</span></h2></div><p>From your first business page to advanced tracking and automation, choose the support your business needs right now.</p></div>
 <div class="service-tools"><div class="filters" id="filters"><button class="filter active" data-filter="all" aria-pressed="true">All 15</button><button class="filter" data-filter="branding">Branding & Trust</button><button class="filter" data-filter="organic">Organic Visibility</button><button class="filter" data-filter="ads">Ads & Conversions</button><button class="filter" data-filter="tracking">Tracking</button><button class="filter" data-filter="automation">B2B & Automation</button></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search a service…" aria-label="Search services"></label></div>
 <div class="services-grid" id="servicesGrid"></div><div class="no-results" id="noResults" hidden>No matching services. Try a different search or category.</div>
 <div class="service-bottom"><div><strong>Not sure where to start?</strong><small>Tell us your goal. We'll help you identify a sensible next step.</small></div><a class="btn btn-dark" href="#contact">Get a Free Consultation ↗</a></div></div></section>
@@ -473,7 +579,7 @@ function renderServices(){
  const active = document.querySelector(".filter.active").dataset.filter;
  const q = document.getElementById("search").value.trim().toLowerCase();
  const matches = services.filter(s => (active==="all" || s.category===active) && (s.title+" "+s.problem+" "+s.group).toLowerCase().includes(q));
- grid.innerHTML = matches.map(s => '<article class="service-card"><div class="card-top"><span class="service-no">'+String(s.n).padStart(2,"0")+' / 15</span><span class="service-icon">'+s.icon+'</span></div><h3>'+s.title+'</h3><p>'+s.solution+'</p><div class="card-foot"><span>'+s.group+'</span><button type="button" data-service="'+s.n+'">Explore ↗</button></div></article>').join("");
+ grid.innerHTML = matches.map(s => '<article class="service-card cat-'+s.category+'" style="--card-index:'+s.n+'"><div class="card-top"><span class="service-no">'+String(s.n).padStart(2,"0")+' <i>/</i> 15</span><span class="service-icon" aria-hidden="true"><span class="service-icon-aura"></span><span class="service-icon-glyph">'+s.icon+'</span></span></div><div class="service-card-kicker"><span class="kicker-dot"></span><span>'+s.group+'</span></div><h3>'+s.title+'</h3><p>'+s.solution+'</p><div class="card-foot"><span class="deliverable-count"><b>'+s.offers.length+'</b> deliverables</span><button type="button" data-service="'+s.n+'"><span>Explore</span><i aria-hidden="true">↗</i></button></div></article>').join("");
  document.getElementById("noResults").hidden = matches.length>0;
 }
 document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-filter]");if(!b)return;document.querySelectorAll(".filter").forEach(x=>{x.classList.toggle("active",x===b);x.setAttribute("aria-pressed",x===b?"true":"false")});renderServices();observeRevealables()});
