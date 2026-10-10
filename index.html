@@ -9,6 +9,7 @@
 <meta property="og:title" content="Growthworks International | Build. Grow. Scale.">
 <meta property="og:description" content="Your business goals. Our digital solutions. Explore 15 digital growth services.">
 <title>Growthworks International | Build. Grow. Scale.</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -200,13 +201,112 @@ footer{background:#061237;color:white;padding:34px 0 20px}.footer-main{display:f
   .modal h2{font-size:23px}
 }
 
+
+/* Premium visual refinement */
+:root{--navy:#071744;--navy2:#122b70;--blue:#3559e8;--sky:#8da4ff;--mint:#aaf3d9;--ink:#141d35;--muted:#66718b;--line:#e5eaf4;--paper:#f7f9ff;--shadow:0 24px 70px rgba(13,31,83,.12)}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{font-family:Manrope,Inter,Arial,sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:#d9e2ff;color:#0a1a4b}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid rgba(91,119,255,.62);outline-offset:3px}
+header{background:rgba(255,255,255,.95);box-shadow:0 6px 28px rgba(12,29,78,.045);border-bottom-color:rgba(220,227,242,.92)}
+.nav{height:78px;gap:28px}
+.brand{gap:10px}.brand .logo{flex:0 0 auto;filter:drop-shadow(0 4px 8px rgba(11,31,88,.10))}
+.brand-name{font-size:13px;letter-spacing:.075em;color:#12204a}.brand-name small{font-size:8px;letter-spacing:.34em;color:#7582a2}
+.navlinks{gap:clamp(13px,1.65vw,24px);font-size:11px;color:#4d5875}
+.navlinks a:not(.nav-cta){position:relative;transition:color .2s ease}
+.navlinks a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:2px;border-radius:3px;background:var(--blue);transition:right .22s ease}
+.navlinks a:not(.nav-cta):hover:after{right:0}
+.navlinks .nav-cta{padding:12px 18px;border:1px solid rgba(255,255,255,.12);box-shadow:0 8px 20px rgba(7,23,68,.12);transition:transform .2s ease,box-shadow .2s ease}
+.navlinks .nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(7,23,68,.18)}
+.menu-btn{box-shadow:0 4px 14px rgba(14,29,76,.06)}
+.hero{isolation:isolate;background:radial-gradient(ellipse at 82% 22%,rgba(91,125,255,.22),transparent 34%),radial-gradient(ellipse at 15% 100%,rgba(35,91,198,.20),transparent 38%),linear-gradient(118deg,#071641 0%,#102966 57%,#152f77 100%);padding-top:clamp(64px,6.2vw,88px)}
+.hero:before{width:670px;height:670px;right:-165px;top:-295px;border-color:rgba(208,220,255,.14)}
+.hero:after{width:470px;height:470px;right:-65px;top:-190px;border-color:rgba(208,220,255,.12)}
+.hero-grid{gap:clamp(22px,3.2vw,48px)}
+.eyebrow{letter-spacing:.19em}
+.hero h1{font-size:clamp(44px,5.15vw,70px);line-height:1.035;letter-spacing:-.063em;text-wrap:balance}
+.lede{max-width:570px;font-size:14px;line-height:1.95;color:#dce5ff}
+.actions{gap:11px;margin-top:26px}
+.btn{min-height:46px;padding:14px 21px;border-radius:14px;letter-spacing:-.01em;box-shadow:none}
+.btn-primary{background:linear-gradient(135deg,#b6f4df,#91ebcf);box-shadow:0 12px 26px rgba(109,233,194,.15)}
+.btn-primary:hover{box-shadow:0 16px 32px rgba(109,233,194,.23)}
+.btn-ghost{background:rgba(255,255,255,.065);border-color:rgba(223,231,255,.34)}
+.btn-dark{box-shadow:0 10px 24px rgba(7,23,68,.13)}
+.hero-proof{margin-top:30px}.proof-icons span{box-shadow:0 4px 12px rgba(1,10,34,.16)}
+.hero-art{min-width:0}
+.orbit{border-color:rgba(201,214,255,.26);box-shadow:0 0 0 1px rgba(255,255,255,.012) inset}.orbit.inner{border-color:rgba(201,214,255,.24)}
+.art-center{width:200px;height:200px;background:radial-gradient(circle at 32% 25%,#fff 0%,#f7f9ff 58%,#dce5ff 100%);border:9px solid rgba(255,255,255,.28);box-shadow:0 24px 65px rgba(0,0,0,.24),0 0 0 13px rgba(255,255,255,.035)}
+.art-center .logo{width:100%;height:100%;filter:drop-shadow(0 12px 14px rgba(8,27,82,.20))}
+.art-caption{top:calc(50% + 105px);font-size:9px;letter-spacing:.2em;text-shadow:0 2px 12px rgba(0,0,0,.2)}
+.float{min-width:174px;padding:14px 15px;border:1px solid rgba(224,231,249,.7);box-shadow:0 18px 46px rgba(0,0,0,.20);animation:floatIn .7s ease both}
+.float.one{animation-delay:.08s}.float.two{animation-delay:.18s}.float.three{animation-delay:.28s}
+.float small{font-size:7px;letter-spacing:.13em}.float strong{font-size:10px;line-height:1.5}.float-mark{background:linear-gradient(145deg,#e9edff,#dce5ff);box-shadow:inset 0 1px 0 #fff}
+.hero-bottom{letter-spacing:.2em;border-top-color:rgba(255,255,255,.17)}
+.intro{background:linear-gradient(180deg,#f9faff,#f4f7ff);border-bottom-color:#e8edf8}.intro-inner{gap:28px}
+.intro p{font-size:12px;letter-spacing:-.01em}.stats{gap:clamp(18px,2.8vw,34px)}
+.stat strong{font-size:25px;color:#10245d}.stat span{font-size:9px;line-height:1.45}
+section.pad{padding:clamp(72px,7.5vw,100px) 0}.heading{margin-bottom:40px}
+.heading h2,.about-copy h2,.career-copy h2,.contact-copy h2{letter-spacing:-.06em;text-wrap:balance}
+.heading>p{font-size:12px;line-height:1.85}.heading .eyebrow{color:#5165a9}
+.heading h2 .shine{background-image:linear-gradient(100deg,#3559e8,#7192ff);-webkit-background-clip:text;background-clip:text}
+.service-tools{gap:20px;margin-bottom:27px}
+.filter{border:1px solid #e7ebf5;transition:background .2s,border-color .2s,color .2s,transform .2s}.filter:hover{transform:translateY(-1px)}
+.filter.active{background:#11265f;color:#fff;border-color:#11265f;box-shadow:0 7px 18px rgba(15,37,98,.14)}
+.search{box-shadow:0 5px 18px rgba(12,30,82,.035);transition:border-color .2s,box-shadow .2s}.search:focus-within{border-color:#aab9ff;box-shadow:0 0 0 4px rgba(66,98,224,.09)}
+.services-grid{gap:17px}
+.service-card{position:relative;overflow:hidden;min-height:258px;padding:23px;border-color:#e5eaf5;border-radius:20px;box-shadow:0 3px 15px rgba(15,35,91,.025);transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.service-card:before{content:"";position:absolute;left:22px;right:22px;top:0;height:3px;border-radius:0 0 5px 5px;background:linear-gradient(90deg,#385be8,#9aaeff,#a9efd8);opacity:0;transition:opacity .24s ease}
+.service-card:hover{transform:translateY(-6px);border-color:#c9d4ff;box-shadow:0 22px 45px rgba(18,39,104,.10)}.service-card:hover:before{opacity:1}
+.service-icon{background:linear-gradient(145deg,#f0f3ff,#e3eaff);border:1px solid #e3e9ff;box-shadow:inset 0 1px 0 #fff}
+.service-card h3{letter-spacing:-.035em}.service-card p{font-size:11.5px;line-height:1.85}
+.card-foot{gap:12px;color:#3256d7}.card-foot button{border:0;background:transparent;color:#3158e8;font-size:10px;font-weight:800;padding:2px 0;border-bottom:1px solid transparent;transition:border-color .2s}.card-foot button:hover{border-color:#3158e8}
+.service-bottom{border:1px solid #e3eaff;background:linear-gradient(110deg,#f4f6ff,#eef3ff);box-shadow:0 10px 32px rgba(15,39,102,.035)}.service-bottom .btn{border-radius:13px}
+.process{background:linear-gradient(180deg,#f6f8fe,#f9faff)}
+.step{border-radius:20px;box-shadow:0 4px 18px rgba(12,30,82,.025);transition:transform .22s,box-shadow .22s,border-color .22s}
+.step:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(12,30,82,.075);border-color:#d2dcff}
+.step-icon{background:linear-gradient(145deg,#f1f4ff,#e3eaff);border:1px solid #e3eaff}
+.portfolio{position:relative;isolation:isolate;background:radial-gradient(ellipse at 92% 0%,rgba(72,105,231,.25),transparent 30%),linear-gradient(128deg,#071640,#0c2057 58%,#122b68)}
+.portfolio-grid{gap:18px}.work-card{border-color:rgba(255,255,255,.13);box-shadow:0 12px 34px rgba(0,0,0,.08);transition:transform .24s ease,box-shadow .24s ease}
+.work-card:hover{transform:translateY(-5px);box-shadow:0 24px 48px rgba(0,0,0,.18)}.work-art{min-height:195px}.work-copy{padding:22px}.work-copy h3{letter-spacing:-.025em}.portfolio-note{line-height:1.8;color:#c7d2f3}
+.about-visual{border:1px solid #e0e7ff;box-shadow:0 22px 50px rgba(12,36,104,.07)}.about-visual:after{border-color:#bfcdf8}
+.value{background:linear-gradient(140deg,#fff,#fbfcff);transition:transform .2s,border-color .2s,box-shadow .2s}.value:hover{transform:translateY(-2px);border-color:#d5deff;box-shadow:0 10px 25px rgba(12,31,84,.055)}
+.humanity{background:radial-gradient(ellipse at 0 0,rgba(178,245,220,.65),transparent 42%),linear-gradient(120deg,#effaf6,#eaf7f2)}
+.donation-card{border:1px solid rgba(41,143,104,.12);box-shadow:0 18px 45px rgba(18,93,67,.08)}.donation-number{letter-spacing:-.1em}.transparency{line-height:1.75;background:#eefaf5;border:1px solid #dcefe7}
+.careers{background:linear-gradient(180deg,#f7f9ff,#f3f6fe)}.opening{box-shadow:0 8px 22px rgba(13,32,87,.035);border-radius:16px}
+.role-tags span{border:1px solid #dfe6fa;transition:background .2s,border-color .2s}.role-tags span:hover{background:#e0e8ff;border-color:#c9d5ff}
+.form-card{border-color:#e3e9f5;box-shadow:0 18px 48px rgba(12,31,84,.07);border-radius:22px}
+.form-card input,.form-card select,.form-card textarea{border-color:#dfe5f1;transition:border-color .2s,box-shadow .2s}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{border-color:#94a8ff;box-shadow:0 0 0 4px rgba(63,94,219,.09)}
+.contact{background:radial-gradient(ellipse at 90% 0%,rgba(72,105,231,.24),transparent 32%),linear-gradient(125deg,#071640,#0d235e 70%,#132b6b)}
+.contact-method{transition:background .2s,border-color .2s,transform .2s}a.contact-method:hover{background:rgba(255,255,255,.085);border-color:rgba(178,200,255,.38);transform:translateX(3px)}
+.contact .form-card{box-shadow:0 28px 65px rgba(0,0,0,.18)}
+.final-cta{background:linear-gradient(110deg,#baf4df,#d9f9ed)}.final-cta .btn{border-radius:13px}
+footer{background:linear-gradient(120deg,#050f2d,#081844);border-top:1px solid rgba(255,255,255,.08)}
+.footer-nav a{transition:color .2s}.footer-nav a:hover{color:#aaf3d9}
+.wa-float{border:1px solid rgba(255,255,255,.4);background:linear-gradient(135deg,#20ae72,#138657);box-shadow:0 13px 30px rgba(17,132,83,.26);transition:transform .2s,box-shadow .2s}
+.wa-float:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(17,132,83,.34)}
+.modal{border:1px solid #e6ebf5;box-shadow:0 30px 100px rgba(0,0,0,.26)}.modal-close{transition:background .2s,border-color .2s}.modal-close:hover{background:#f1f4ff;border-color:#d4ddfb}
+@keyframes floatIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroFade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.hero-grid>div:first-child{animation:heroFade .7s ease both}.hero-art{animation:heroFade .8s .08s ease both}
+@media(max-width:1050px){.nav{gap:14px}.navlinks{gap:12px}.navlinks a{font-size:10px}.brand-name{font-size:12px}.hero-grid{gap:20px}.float{min-width:156px}.art-center{width:184px;height:184px}}
+@media(max-width:760px){
+html{scroll-padding-top:72px}.nav{height:68px}.brand .logo{width:40px;height:40px}.brand-name{font-size:11px}
+.hero{padding-top:43px}.hero h1{font-size:clamp(37px,9.6vw,52px);line-height:1.07}.lede{font-size:13px}.actions{margin-top:22px}
+.hero-art{animation:none}.art-center{width:clamp(125px,39vw,155px);height:clamp(125px,39vw,155px);border-width:6px}
+.float{width:clamp(118px,37vw,145px);min-width:0}.float.one{right:0;top:25px}.float.two{left:0;top:125px}.float.three{right:0;bottom:16px}
+.service-card{min-height:0}.work-art{min-height:160px}.work-copy{padding:18px}
+}
+@media(max-width:390px){.hero h1{font-size:36px}.hero-art{min-height:275px}.float{width:116px;padding:9px}.float.two{top:112px}}
+@media(prefers-reduced-motion:reduce){.hero-grid>div:first-child,.hero-art,.float{animation:none!important}}
+
 </style>
 </head>
 <body>
 <div class="announcement"><span class="dot"></span>Your business goals. Our digital solutions. &nbsp; <strong>Build. Grow. Scale.</strong></div>
 <header><div class="container nav">
 <a class="brand" href="#home" aria-label="Growthworks International home">
-<svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Growthworks logo"><rect width="100" height="100" rx="24" fill="#0b205d"/><path d="M78 21A38 38 0 1 0 84 52" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round"/><path d="M31 35L48 57M44 35L61 57M61 56L71 43L83 43" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Growthworks International brand mark"><rect x="2" y="2" width="96" height="96" rx="25" fill="#0b205d" stroke="#ffffff" stroke-opacity=".16" stroke-width="1.5"/><path d="M75 24 A35 35 0 1 0 83 51" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round"/><path d="M29 35 L45 56 M44 35 L60 56 M60 56 L71 44 L83 44" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <span class="brand-name">GROWTHWORKS<small>INTERNATIONAL</small></span></a>
 <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 <nav class="navlinks" id="navLinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About us</a><a href="#humanity">Humanity First</a><a href="#careers">Careers</a><a class="nav-cta" href="#contact">Let's Talk ↗</a></nav>
@@ -218,7 +318,7 @@ footer{background:#061237;color:white;padding:34px 0 20px}.footer-main{display:f
 <p class="lede">We help businesses locally and worldwide grow beyond random marketing. Strategy, creative execution and smarter systems help your brand build trust, reach the right audience and turn attention into action.</p>
 <div class="actions"><a class="btn btn-primary" href="#contact">Discuss Your Project ↗</a><a class="btn btn-ghost" href="#services">Explore Our Services ↓</a></div>
 <div class="hero-proof"><div class="proof-icons"><span>G</span><span>W</span><span>+</span></div><div><strong>Client-focused by design</strong><small>Clear plans. Practical delivery. Transparent communication.</small></div></div>
-</div><div class="hero-art" aria-label="Brand growth concept"><div class="orbit"></div><div class="orbit inner"></div><div class="art-center"><svg class="logo" viewBox="0 0 100 100" aria-label="Growthworks mark"><rect width="100" height="100" rx="24" fill="#0b205d"/><path d="M78 21A38 38 0 1 0 84 52" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round"/><path d="M31 35L48 57M44 35L61 57M61 56L71 43L83 43" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="art-caption">BUILD. GROW. SCALE.</div>
+</div><div class="hero-art" aria-label="Brand growth concept"><div class="orbit"></div><div class="orbit inner"></div><div class="art-center"><svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Growthworks International brand mark"><rect x="2" y="2" width="96" height="96" rx="25" fill="#0b205d" stroke="#ffffff" stroke-opacity=".16" stroke-width="1.5"/><path d="M75 24 A35 35 0 1 0 83 51" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round"/><path d="M29 35 L45 56 M44 35 L60 56 M60 56 L71 44 L83 44" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="art-caption">BUILD. GROW. SCALE.</div>
 <div class="float one"><span class="float-mark">↗</span><small>YOUR NEXT MOVE</small><strong>Build with purpose</strong></div><div class="float two"><span class="float-mark">◎</span><small>VISIBILITY</small><strong>Be easier to find</strong></div><div class="float three"><span class="float-mark">✦</span><small>SMARTER SYSTEMS</small><strong>Grow sustainably</strong></div></div></div>
 <div class="container hero-bottom"><span>STRATEGY</span><i></i><span>CREATIVITY</span><i></i><span>PERFORMANCE</span><i></i><span>HUMANITY</span></div></section>
 <div class="intro"><div class="container intro-inner"><p><span>✳</span> One partner for your digital growth journey.</p><div class="stats"><div class="stat"><strong>15</strong><span>Client-focused services</span></div><div class="stat"><strong>05</strong><span>Service categories</span></div><div class="stat"><strong>10%</strong><span>Humanity First commitment*</span></div></div></div></div>
@@ -237,7 +337,7 @@ footer{background:#061237;color:white;padding:34px 0 20px}.footer-main{display:f
 <article class="work-card"><div class="work-art green"><div class="mock-poster">MAKE YOUR<br>BRAND STAND OUT</div></div><div class="work-copy"><small>CREATIVE & CONTENT</small><h3>Social campaign creative</h3><p>Consistent visuals and short-form content designed around audience and campaign goals.</p></div></article>
 <article class="work-card"><div class="work-art orange"><div class="mock-chart"><span style="height:36%"></span><span style="height:62%"></span><span style="height:49%"></span><span style="height:84%"></span><span style="height:70%"></span></div></div><div class="work-copy"><small>ADS & ANALYTICS</small><h3>Measurement-led campaign setup</h3><p>Structured tracking, event checks and reporting to help inform future decisions.</p></div></article>
 </div><p class="portfolio-note">Verified client testimonials, completed project details and before-and-after performance data will be published after the relevant examples are supplied and approved.</p></div></section>
-<section class="pad" id="about"><div class="container about-grid"><div class="about-visual"><div class="about-statement"><svg class="logo" viewBox="0 0 100 100" aria-label="Growthworks logo"><rect width="100" height="100" rx="24" fill="#0b205d"/><path d="M78 21A38 38 0 1 0 84 52" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round"/><path d="M31 35L48 57M44 35L61 57M61 56L71 43L83 43" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><strong>BUILD. GROW. SCALE.</strong><span>GROWTHWORKS INTERNATIONAL</span></div></div><div class="about-copy"><div class="eyebrow">ABOUT US</div><h2>Growth built on <span style="color:#3158e8">clarity and trust.</span></h2><p>Growthworks International brings practical digital marketing, creative services, web development, measurement and automation together under one client-focused approach.</p><p>Our story is a commitment to making digital tools more useful for businesses: understand the goal first, recommend a sensible scope, communicate clearly and deliver work that can be reviewed.</p><div class="values"><article class="value"><strong>Our Mission</strong><p>Help businesses build trust, reach relevant audiences and make better digital decisions.</p></article><article class="value"><strong>Our Vision</strong><p>Grow a responsible digital partner known for useful work and transparent communication.</p></article><article class="value"><strong>People First</strong><p>Make room for dignity, inclusion and practical support for communities.</p></article><article class="value"><strong>Accountability</strong><p>Set realistic expectations, document scope and communicate progress honestly.</p></article></div></div></div></section>
+<section class="pad" id="about"><div class="container about-grid"><div class="about-visual"><div class="about-statement"><svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Growthworks International brand mark"><rect x="2" y="2" width="96" height="96" rx="25" fill="#0b205d" stroke="#ffffff" stroke-opacity=".16" stroke-width="1.5"/><path d="M75 24 A35 35 0 1 0 83 51" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round"/><path d="M29 35 L45 56 M44 35 L60 56 M60 56 L71 44 L83 44" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round" stroke-linejoin="round"/></svg><strong>BUILD. GROW. SCALE.</strong><span>GROWTHWORKS INTERNATIONAL</span></div></div><div class="about-copy"><div class="eyebrow">ABOUT US</div><h2>Growth built on <span style="color:#3158e8">clarity and trust.</span></h2><p>Growthworks International brings practical digital marketing, creative services, web development, measurement and automation together under one client-focused approach.</p><p>Our story is a commitment to making digital tools more useful for businesses: understand the goal first, recommend a sensible scope, communicate clearly and deliver work that can be reviewed.</p><div class="values"><article class="value"><strong>Our Mission</strong><p>Help businesses build trust, reach relevant audiences and make better digital decisions.</p></article><article class="value"><strong>Our Vision</strong><p>Grow a responsible digital partner known for useful work and transparent communication.</p></article><article class="value"><strong>People First</strong><p>Make room for dignity, inclusion and practical support for communities.</p></article><article class="value"><strong>Accountability</strong><p>Set realistic expectations, document scope and communicate progress honestly.</p></article></div></div></div></section>
 <section class="pad humanity" id="humanity"><div class="container humanity-grid"><div class="humanity-copy"><div class="eyebrow">HUMANITY FIRST</div><h2>Growth means more when <span style="color:#147957">people grow, too.</span></h2><p>We want our business growth to contribute to meaningful humanitarian support in Bangladesh. Activities and reporting will be published as verified information becomes available.</p><a class="btn btn-dark" href="#contact">Ask About Humanity First ↗</a></div><div class="donation-card"><div class="donation-number">10<span>%</span></div><h3>Flat 10% Donation Commitment</h3><p>Our stated commitment is to direct 10% toward humanitarian initiatives. The calculation basis, timing and scope should be disclosed in writing for each eligible engagement.</p><div class="humanity-list"><div><b>01</b><span>Essential support for low-income communities</span></div><div><b>02</b><span>Education and opportunity-focused initiatives</span></div><div><b>03</b><span>Humanitarian support during difficult times</span></div></div><div class="transparency"><strong>Transparency matters.</strong> Donation reports, activity dates, expenditure records and available receipts will be shared as verified reports become available. No donation record or impact story has been supplied for publication yet.</div></div></div></section>
 <section class="pad careers" id="careers"><div class="container career-grid"><div class="career-copy"><div class="eyebrow">CAREER OPPORTUNITIES</div><h2>Bring your curiosity. <span style="color:#3158e8">Grow with us.</span></h2><p>Interested in digital marketing, design, web development, analytics or business automation? Share your profile for consideration when a relevant opportunity is available.</p><div class="opening"><strong>Current openings: no confirmed vacancy listed</strong><p>Role types, responsibilities, requirements, compensation, benefits and work arrangements will be stated in each approved vacancy. Internship opportunities may be announced here when available.</p></div><div class="role-tags"><span>Digital Marketing</span><span>SEO & Content</span><span>Graphic / Video Design</span><span>Web Development</span><span>Ads & Analytics</span><span>Automation</span><span>Internships</span></div></div>
 <form class="form-card" id="careerForm"><span class="form-kicker">JOIN OUR TALENT POOL</span><h3>Share your profile</h3><p>We'll prepare an email draft for you. Attach your CV before sending.</p><label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label><label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label><label>Area of interest<select name="position" required><option value="" disabled selected>Select an area</option><option>Digital Marketing</option><option>SEO & Content</option><option>Graphic / Video Design</option><option>Web Development</option><option>Ads & Analytics</option><option>Marketing Automation</option><option>Internship</option><option>Other</option></select></label><label>LinkedIn / Portfolio URL<input name="portfolio" type="url" placeholder="https://"></label><label>Short introduction<textarea name="message" rows="3" placeholder="Tell us about your skills…"></textarea></label><button class="btn btn-dark full" type="submit">Prepare Application Email ↗</button><p class="helper" id="careerFeedback">Your email app will open. Attach your CV manually before sending.</p></form></div></section>
@@ -245,7 +345,7 @@ footer{background:#061237;color:white;padding:34px 0 20px}.footer-main{display:f
 <form class="form-card" id="contactForm"><span class="form-kicker">PROJECT INQUIRY</span><h3>Let's make a plan.</h3><p>Share a few details to start your free consultation.</p><label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label><label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@company.com"></label><label>Service you're interested in<select name="service" id="contactService" required><option value="" disabled selected>Choose a service</option></select></label><label>Project details<textarea name="message" rows="4" required placeholder="What are you trying to achieve?"></textarea></label><button class="btn btn-primary full" type="submit">Send Inquiry on WhatsApp ↗</button><p class="helper" id="contactFeedback">Submitting opens WhatsApp with your message ready to send.</p></form></div></section>
 <section class="final-cta"><div class="container final-inner"><div><small>YOUR BUSINESS GOALS. OUR DIGITAL SOLUTIONS.</small><h2>Ready to build what comes next?</h2></div><a class="btn btn-dark" href="#contact">Let's start a conversation ↗</a></div></section>
 </main>
-<footer><div class="container footer-main"><a class="brand" href="#home"><svg class="logo" viewBox="0 0 100 100" aria-label="Growthworks logo"><rect width="100" height="100" rx="24" fill="#0b205d"/><path d="M78 21A38 38 0 1 0 84 52" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round"/><path d="M31 35L48 57M44 35L61 57M61 56L71 43L83 43" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">GROWTHWORKS<small>INTERNATIONAL</small></span></a><p class="footer-desc">Build. Grow. Scale.<br>Your business goals. Our digital solutions.</p><nav class="footer-nav"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About us</a><a href="#humanity">Humanity First</a><a href="#careers">Careers</a><a href="#contact">Contact</a></nav></div><div class="container footer-bottom"><span>© <span id="year"></span> Growthworks International. All rights reserved.</span><span>Built around trust, thoughtful growth and people-first values.</span><a href="#home">Back to top ↑</a></div></footer>
+<footer><div class="container footer-main"><a class="brand" href="#home"><svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Growthworks International brand mark"><rect x="2" y="2" width="96" height="96" rx="25" fill="#0b205d" stroke="#ffffff" stroke-opacity=".16" stroke-width="1.5"/><path d="M75 24 A35 35 0 1 0 83 51" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round"/><path d="M29 35 L45 56 M44 35 L60 56 M60 56 L71 44 L83 44" fill="none" stroke="#ffffff" stroke-width="7.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">GROWTHWORKS<small>INTERNATIONAL</small></span></a><p class="footer-desc">Build. Grow. Scale.<br>Your business goals. Our digital solutions.</p><nav class="footer-nav"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About us</a><a href="#humanity">Humanity First</a><a href="#careers">Careers</a><a href="#contact">Contact</a></nav></div><div class="container footer-bottom"><span>© <span id="year"></span> Growthworks International. All rights reserved.</span><span>Built around trust, thoughtful growth and people-first values.</span><a href="#home">Back to top ↑</a></div></footer>
 <a class="wa-float" href="https://wa.me/8801600654345?text=Hello%20Growthworks%20International%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><span>✆</span> Chat with us</a>
 <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-meta"><span id="modalNo">01</span><span id="modalCat">BRANDING & TRUST</span></div><h2 id="modalTitle">Service details</h2><p class="modal-intro" id="modalIntro"></p><div class="modal-cols"><article><h4>THE CHALLENGE</h4><p id="modalProblem"></p></article><article><h4>OUR APPROACH</h4><p id="modalSolution"></p></article></div><h3>What's included</h3><ul id="modalOffer"></ul><div class="transparency"><strong>Client benefit:</strong> <span id="modalBenefit"></span></div><h3>How we work</h3><p class="modal-intro">We confirm your goals and account access, agree on scope and quote, complete the work, then review delivery with you. Service-specific timelines are confirmed before the project begins.</p><a class="btn btn-primary full" id="modalCta" href="#contact">Request a Quote ↗</a></section></div>
 <script>
